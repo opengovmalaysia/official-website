@@ -1,0 +1,154 @@
+*,input{
+  font-family: 'Open Sans',"LiHei Pro","微軟正黑體", "Microsoft JhengHei";
+}
+#top-nav{
+  background: #444;
+  width: 100%;
+  color: #FFF;
+}
+#top-nav li{
+  float: left;
+  height: 33px;
+  padding: 0 5px;
+}
+#top-nav li a{
+  color: #FFF;
+  padding: 0px 10px;
+  font-size: 16px;
+  display: block;
+  line-height: 33px;
+}
+#top-nav li a:hover{
+  background: #FFF;
+  color: #444;
+}
+li#top-acc{
+  float: right;
+  margin: 0;
+  position: relative;
+}
+li a#top-acc-button{
+  padding: 0 10px;
+}
+#top-nav li a.highlight{
+  background: #fff;
+  color: #444;
+  height: 100%;
+}
+#main-wrap{
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+.top-menu{
+  background: #FFF;
+  position: absolute;
+  right: 4px;
+  top: 33px;
+  padding: 0 10px;
+  z-index: 999;
+  display: none;
+  border: solid 1px #444;
+  border-top: none;
+}
+#top-login-form{
+  width: 240px;
+  color: #fff;
+  padding-top: 10px;
+}
+#top-login-form a.button{
+  display: inline;
+}
+#top-login-form label{
+  padding: 5px;
+  color: #666;
+}
+#top-acc-menu{
+  width: 120px;
+  padding: 10px 5px;
+}
+#top-acc-menu ul li a{
+  color: #444;
+  display: block;
+}
+#top-acc-menu ul li a:hover{
+  color: #fff;
+  background: #444;
+  display: block;
+  width: 90px;
+}
+.mid-text{
+  width: 180px;
+  height: 25px;
+  border: #666 solid 1px;
+  margin: 3px 0;
+  color:#666;
+  font-size: 18px;
+  padding: 3px;
+}
+.long-text{
+  width: 250px;
+  height: 25px;
+  border: #666 solid 1px;
+  margin: 3px 0;
+  color:#666;
+  font-size: 18px;
+  padding: 3px;
+}
+select{
+  height: 25px;
+  border: #666 solid 1px;
+  background: #fff;
+  line-height: 25px;
+  color: #444;
+}
+.button-wrap{
+  text-align: right;
+  padding: 10px;
+}
+.button{
+  background: #46008C;
+  border: none;
+  padding: 7px 12px!important;
+  color: #fff;
+  cursor: pointer;
+}
+.button:hover{
+  background: #6105bc;
+}
+.button.primary{
+  background: #ff6519;
+}
+.button.alert{
+  background: #e00825;
+}
+.button.alert:hover{
+  background: #fc0a0e;
+}
+#overlay-message{
+  position: relative;
+  width: 0;
+  margin:0 auto;
+  z-index: 9999;
+  display: none;
+}
+#overlay-message div{
+  position: absolute;
+  width: 450px;
+  min-height: 100px;
+  line-height: 100px;
+  left: -225px;
+  text-align: center;
+  background: #505050;
+  color: #FFF;
+  font-size: 18px;
+}
+#overlay-message div.failed{
+  background: #F96211;
+}
+#overlay-message div.success{
+  background: #63E238;
+}
+#overlay-message div.error{
+  background: #ed3e2a;
+}
