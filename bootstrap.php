@@ -10,6 +10,7 @@ $slimConfigs['templates.path'] = 'app/views';
 $slimConfigs['rootUrl'] = ROOT_URL;
 $slimConfigs['assetUrl'] = ROOT_URL .'/assets';
 $slimConfigs['rootPath'] = dirname(__FILE__);
+$slimConfigs['localePath'] = dirname(__FILE__) .'/app/locales';
 
 $app = new Slim\Slim($slimConfigs);
 $app->view()->setData('rootUrl', ROOT_URL);
@@ -26,6 +27,6 @@ foreach(glob('app/hooks/*.php') as $file) {
 foreach(glob('app/controllers/*.php') as $file) {
     require $file;
 }
-
+$app->add(new \I18n());
 $app->run();
 

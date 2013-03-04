@@ -1,5 +1,5 @@
 <?php
-$app->get('/home', function() use($app)
+$app->get('/home/:lang', function() use($app)
 {
     $app->render('home.html');
 });
